@@ -17,5 +17,19 @@ Use npm to install the Ionic CLI:
 
 ## 3. Create a New Ionic Angular Project
 Navigate to the directory where you want your project:
-'''cd ~/your-desired-directory
-'''ionic start myApp blank --type=angular
+```cd ~/your-desired-directory
+   ionic start SeasonalSavor blank --type=angular
+```
+
+## 4. Navigate to Project Directory
+```cd SeasonalSavor
+```
+
+## 5. Initialize Git and Clone This Repository
+Initialize Git:
+```git init```
+
+Clone the GitHub Repo into Your Project Directory:
+```git remote add origin
+
+
