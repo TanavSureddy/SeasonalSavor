@@ -13,6 +13,7 @@ Make sure you have **Node.js** installed.
 Use npm to install the Ionic CLI:
  ```bash
    npm install -g @ionic/cli
+```
 
 ## 3. Create a New Ionic Angular Project
 Navigate to the directory where you want your project:
