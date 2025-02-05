@@ -40,7 +40,7 @@
           Invalid CVV
         </div>
 
-        <ion-button expand="block" type="submit" [disabled]="paymentForm.invalid" (click)="redirectToOrderSuccess()">Pay &#8377;{{cartServices.totalCartValue}}</ion-button>
+        <ion-button expand="block" type="submit" [disabled]="paymentForm.invalid" (click)="redirectToOrderSuccess()">Pay $;{{cartServices.totalCartValue}}</ion-button>
       </form>
     </ion-card-content>
   </ion-card>

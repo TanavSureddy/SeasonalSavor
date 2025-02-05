@@ -28,39 +28,52 @@ export class HomePage implements OnInit {
     {
       productId: 1,
       name: "Broccoli",
-      variant: "750gm",
-      price: 90.0,
-      oldPrice: 100,
+      variant: "1 lbs",
+      price: 4.99,
+      oldPrice: 5.99,
       quantity: 0,
     },
     {
       productId: 2,
       name: "Orange",
-      variant: "1kg",
-      price: 54.0,
-      oldPrice: 60,
+      variant: "1 lbs",
+      price: 1.19,
+      oldPrice: 1.29,
       quantity: 0,
     },
     {
       productId: 3,
       name: "Milk",
-      variant: "1 Litre",
-      price: 72.0,
-      oldPrice: 80,
+      variant: "1 gal",
+      price: 4.99,
+      oldPrice: 5.99,
       quantity: 0,
     },
     {
       productId: 4,
       name: "Tomato",
-      variant: "1kg",
-      price: 30.0,
-      oldPrice: 34,
+      variant: "1 lbs",
+      price: 4.99,
+      oldPrice: 5.49,
       quantity: 0,
     },
   ];
 
   addToCart(product: Product) {
     this.cartService.addToCart(product);
+
+    // Assuming that only "Broccoli" is in the "Green Veggies" category,
+    // check if the added product is broccoli and then sum the total value for it.
+    if (product.name.toLowerCase() === 'broccoli') {
+      // Assuming cartService.cartItems holds the products in your cart.
+      const greenVeggiesTotal = this.cartService.cartItems
+        .filter(item => item.name.toLowerCase() === 'broccoli')
+        .reduce((total, item) => total + (item.price * item.quantity), 0);
+        
+      if (greenVeggiesTotal > 50) {
+        alert("Keep eating your veggies!");
+      }
+    }
   }
 
   removeFromCart(product: Product) {
@@ -69,7 +82,7 @@ export class HomePage implements OnInit {
   }
   
 
-  listGreenVegies() {
+  listGreenVeggies() {
     this.route.navigate(["/tabs/category"]);
     this.categoryServices.segmentChanged("vegetables");
     //console.log("clicked veggie");
@@ -85,7 +98,7 @@ export class HomePage implements OnInit {
     this.categoryServices.segmentChanged("dairy");
   }
 
-  listFruitsVegies() {
+  listFruitsVeggies() {
     this.route.navigate(["/tabs/category"]);
     this.categoryServices.segmentChanged("vegetables");
   }

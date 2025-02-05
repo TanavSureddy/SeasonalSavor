@@ -42,13 +42,13 @@
             />
 
             <div>
-              <div class="productPrice">&#8377;{{product.productPrice}}</div>
+              <div class="productPrice">$;{{product.productPrice}}</div>
               <div class="productName">{{product.productName}}</div>
               <div class="productVariant">{{product.variant}}</div>
               <div class="cartQtyAmount">
                 <div class="qtyCount">{{product.productQuantity}}</div>
                 <div class="totalAmount">
-                  &#8377;{{product.productPrice*product.productQuantity}}
+                  $;{{product.productPrice*product.productQuantity}}
                 </div>
               </div>
             </div>
@@ -59,7 +59,7 @@
       <div class="orderAmountList">
         <div class="amountRow">
           <div>Sub Total</div>
-          <div>&#8377;{{this.orderServices.selectedOrder?.totalOrderPrice}}</div>
+          <div>$;{{this.orderServices.selectedOrder?.totalOrderPrice}}</div>
         </div>
         <div class="amountRow">
           <div>Delivery Charges</div>
@@ -67,12 +67,12 @@
         </div>
         <div class="amountRow">
           <div>GST Tax</div>
-          <div>&#8377;{{this.orderServices.selectedOrder?.totalOrderPrice*18/100}}</div>
+          <div>$;{{this.orderServices.selectedOrder?.totalOrderPrice*18/100}}</div>
         </div>
         <div class="totalAmountRow">
           <div>Total Amount</div>
           <div>
-            &#8377;{{this.orderServices.selectedOrder?.totalOrderPrice+(this.orderServices.selectedOrder?.totalOrderPrice*18/100)}}
+            $;{{this.orderServices.selectedOrder?.totalOrderPrice+(this.orderServices.selectedOrder?.totalOrderPrice*18/100)}}
           </div>
         </div>
       </div>
@@ -134,13 +134,13 @@
             />
 
             <div>
-              <div class="productPrice">&#8377;{{product.price}}</div>
+              <div class="productPrice">$;{{product.price}}</div>
               <div class="productName">{{product.productName}}</div>
               <div class="productVariant">{{product.variant}}</div>
               <div class="cartQtyAmount">
                 <div class="qtyCount">{{product.quantity}}</div>
                 <div class="totalAmount">
-                  &#8377;{{product.price*product.quantity}}
+                  $;{{product.price*product.quantity}}
                 </div>
               </div>
             </div>
@@ -151,7 +151,7 @@
       <div class="orderAmountList">
         <div class="amountRow">
           <div>Sub Total</div>
-          <div>&#8377;{{this.orderServices.totalPriceForParticularOrderOfFlat}}</div>
+          <div>$;{{this.orderServices.totalPriceForParticularOrderOfFlat}}</div>
         </div>
         <div class="amountRow">
           <div>Delivery Charges</div>
@@ -159,12 +159,12 @@
         </div>
         <div class="amountRow">
           <div>GST Tax</div>
-          <div>&#8377;{{this.orderServices.totalPriceForParticularOrderOfFlat*18/100}}</div>
+          <div>$;{{this.orderServices.totalPriceForParticularOrderOfFlat*18/100}}</div>
         </div>
         <div class="totalAmountRow">
           <div>Total Amount</div>
           <div>
-            &#8377;{{this.orderServices.totalPriceForParticularOrderOfFlat+(this.orderServices.totalPriceForParticularOrderOfFlat*18/100)}}
+            $;{{this.orderServices.totalPriceForParticularOrderOfFlat+(this.orderServices.totalPriceForParticularOrderOfFlat*18/100)}}
           </div>
         </div>
       </div>

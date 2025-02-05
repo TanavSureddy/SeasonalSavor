@@ -1,4 +1,3 @@
-
 <!-- cart.component.html -->
 <ion-content [fullscreen]="true">
   <div class="ion-padding">
@@ -15,7 +14,7 @@
           />
         </div>
         <div>
-          <div class="productPrice">&#8377;{{ product.price.toFixed(2) }}</div>
+          <div class="productPrice">${{ product.price.toFixed(2) }}</div>
           <div class="productName">{{ product.name }}</div>
           <div class="productVariant">{{ product.variant }}</div>
           <div class="cartQtyAmount">
@@ -30,6 +29,6 @@
 </ion-content>
 <ion-footer class="ion-padding">
   <ion-button expand="block" (click)="redirectToCheckout()" [disabled]="cartItems.length === 0"
-    >Proceed to checkout (&#8377;{{ this.cartService.totalCartValue }})</ion-button
+    >Proceed to checkout (${{ this.cartService.totalCartValue.toFixed(2) }})</ion-button
   >
 </ion-footer>
