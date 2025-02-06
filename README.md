@@ -22,7 +22,8 @@ Navigate to the directory where you want your project:
 ```
 
 ## 4. Navigate to Project Directory
-```cd SeasonalSavor
+```bash
+   cd SeasonalSavor
 ```
 
 ## 5. Initialize Git and Clone This Repo
@@ -36,7 +37,8 @@ Clone the GitHub Repo into Your Project Directory:
 ```
 
 ## 6. Run the App
-```ionic serve
+```bash
+   ionic serve
 ```
 
 
