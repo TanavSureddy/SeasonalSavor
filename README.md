@@ -41,6 +41,7 @@ Clone the GitHub Repo into Your Project Directory:
 ```bash
    ionic serve
 ```
+Your browser window will open to http://localhost:8100
 
 
 
