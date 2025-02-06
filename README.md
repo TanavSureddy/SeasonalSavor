@@ -1,3 +1,9 @@
+# About SeasonalSavor - HackRu '25 Most Practical Application WINNER
+Grocery stores tailor inventory by holidays and seasons—Swiss Miss in winter, Kool-Aid in summer. Why not satisfy customer cravings while optimizing inventory spending? SeasonalSavor's proprietary algorithm ranks foods by seasonal popularity and recommends them to shoppers.
+
+SeasonalSavor uses a machine learning model to recommend grocery items to our customers, based on various factors such as current weather and the month of the year. Included is another model for the designated admin to keep track of which items are most likely to get depleted from the inventory at a given time of the year. SeasonalSavor leverages a seamless Ionic Angular front-end and a rigid Python backend paired with libraries like scikit-learn and pandas to ensure accurate data processing. Our app is built with all relevant stakeholders in mind: the Ionic Angular framework allows for integration across iOS and Android apps, cutting development costs for grocery chains; Our rigorously trained Python model ensures that customers are only being shown the items their hearts truly desire.
+
+
 # Setting Up Ionic Angular and Cloning This Repository
 
 ## 1. Install Node.js
