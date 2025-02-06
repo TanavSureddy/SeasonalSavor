@@ -4,14 +4,13 @@
 Make sure you have **Node.js** installed.  
 - [Download Node.js](https://nodejs.org/) if needed.  
 - Verify installation:
-
-   ```bash
+```bash
    node -v
    npm -v
 
 ## 2. Install Ionic CLI Globally
 Use npm to install the Ionic CLI:
- ```bash
+```bash
    npm install -g @ionic/cli
 ```
 
@@ -28,7 +27,8 @@ Navigate to the directory where you want your project:
 
 ## 5. Initialize Git and Clone This Repo
 Initialize Git:
-```git init
+```bash
+   git init
 ```
 
 Clone the GitHub Repo into Your Project Directory:
