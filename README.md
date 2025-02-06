@@ -7,6 +7,7 @@ Make sure you have **Node.js** installed.
 ```bash
    node -v
    npm -v
+```
 
 ## 2. Install Ionic CLI Globally
 Use npm to install the Ionic CLI:
