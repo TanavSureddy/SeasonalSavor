@@ -7,6 +7,8 @@ SeasonalSavor uses a machine learning model to recommend grocery items to our cu
 ![banner](https://github.com/TanavSureddy/SeasonalSavor/blob/main/2.png)
 ![banner](https://github.com/TanavSureddy/SeasonalSavor/blob/main/3.png)
 
+<br/>
+<br/>
 
 
 # Setting Up Ionic Angular and Cloning This Repository
@@ -52,7 +54,11 @@ Clone the GitHub Repo into Your Project Directory:
 ```bash
    ionic serve
 ```
-Your browser window will open to http://localhost:8100
+Your browser window will open to http://localhost:8100.
+
+<br/>
+<br/>
+<sup><sub>Made in Spring of 2024. Property of Tanav Sureddy.</sub></sup>
 
 
 
